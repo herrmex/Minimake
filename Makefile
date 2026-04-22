@@ -2,9 +2,9 @@ CC = gcc
 CFLAGS = -Wall -Werror -Wextra -fsanitize=address -g
 
 all: ./src/*.c
-	$(CC) -o ./bin/mmake $^ $(CFLAGS)
+	$(CC) -o ./bin/minimake $^ $(CFLAGS)
 
 clean:
-	rm -f ./bin/mmake
+	rm -f ./bin/minimake
 
 .PHONY: clean
